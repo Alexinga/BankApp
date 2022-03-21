@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PiggyBank || Welcome to our Bank App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/style.css">
+    <script defer src="/app.js"></script>
+</head>
+<body>
+    <header id="home">
+        <nav class="navbar">
+            <h1 class="welcome">Log in to get started</h1>
+            <i class="fa-solid fa-piggy-bank"></i>
+            <form class="userInfo">
+                <input id="user" type="text" placeholder="USER">
+                <input id="pin" type="tel" placeholder="PIN">
+                <button type="button" id="loginBtn"><i class="fa-solid fa-right-to-bracket"></i></button>
+            </form>
+        </nav>
+    </header>
+    <section>
+        <h2 class="userTitle">Users you can use to login</h2>
+        <div class="container">
+            <ul class="user">
+                <li>Alex Inga:</li>
+                <li>User: ai</li>
+                <li>Pin: 1111</li>
+            </ul>
+            <ul class="user">
+                <li>Lance Nines:</li>
+                <li>User: ln</li>
+                <li>Pin: 2222</li>
+            </ul>
+            <ul class="user">
+                <li>Maddy Smith:</li>
+                <li>User: ms</li>
+                <li>Pin: 3333</li>
+            </ul><ul class="user">
+                <li>John Doe:</li>
+                <li>User: jd</li>
+                <li>Pin: 4444</li>
+            </ul>
+        </div>
+    </section>
+    <section id="bankApp">
+        <div class="balanceTitle">
+            <div class="currentTitle">
+                <h2>Current balance</h2>
+                <p>As of 03/11/2022, 17:51</p>
+            </div>
+            <h2 class="balance">5000 USD</h2>
+        </div>
+        <div class="grid-container">
+            <div class="movement-money"></div>
+            <div class="transfer-money">
+                <h3>Transfer money</h3>
+                <form class="transfer">
+                    <input id="transferTo" type="text">
+                    <label>Transfer To</label>
+                    <input id="transfer-amount" type="number">
+                    <label>Amount</label>
+                    <button class="transfer-btn"><i class="fa-solid fa-right-to-bracket"></i></button>
+                </form>
+            </div>
+            <div class="loan-money">
+                <h3>Request Loan</h3>
+                <form class="loan">
+                    <input id="loanAmount" type="number">
+                    <label>Amount</label>
+                    <button class="loan-btn"><i class="fa-solid fa-right-to-bracket"></i></button>
+                </form>
+            </div>
+            <div class="close-account">
+                <h3>Close Account</h3>
+                <form class="close">
+                    <input id="closeUser" type="text">
+                    <label>Confirm User</label>
+                    <input id="closePin" type="text">
+                    <label>Confirm Pin</label>
+                    <button class="close-btn"><i class="fa-solid fa-right-to-bracket"></i></button>
+                </form>
+            </div>
+        </div>
+        <div class="transactions">
+            <p class="deposit-summary deposit">In: 500 USD</p>
+            <p class="withdrawal-summary withdrawal">Out: 500 USD</p>
+            <p class="interest-summary interest">Interest: 500 USD</p>
+            <button class="sortBtn" type="button">Sort</button>
+        </div>
+    </section>
+</body>
+</html>

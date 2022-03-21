@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Titillium Web', sans-serif;
+    line-height: 1.7;
+    list-style: none;
+    text-decoration: none;
+}
+/* Navbar Starts */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 1rem 2rem 0 2rem;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.fa-piggy-bank {
+    color: pink;
+    font-size: 3rem;
+}
+.userInfo {
+    padding: 1rem;
+    display: flex;
+    gap: 0.5rem;
+}
+#loginBtn {
+    background: transparent;
+    border: pink solid 2px;
+    cursor: pointer;
+}
+.fa-right-to-bracket {
+    color: pink;
+    padding: 0 0.5rem;
+    background: transparent;
+}
+#user {
+    text-align: center;
+    font-weight: bold;
+}
+#pin {
+    text-align: center;
+    font-weight: bold;
+}
+/* Navbar Ends */
+#bankApp {
+    opacity: 00;
+    transition: all 1s;
+}
+/* UserIntro starts*/
+.userTitle {
+    text-align: center;
+    margin-top: 1rem;
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 1rem;
+}
+.user {
+    font-size: 1.2rem;
+    font-weight: 600;
+    background: pink;
+    margin: 1rem 4rem;
+}
+/* UserIntro ends*/
+/* Main starts*/
+.balanceTitle {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 4rem;
+}
+.balanceTitle h2 {
+    font-size: 2.4rem;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    margin: 1rem 4rem 0 4rem;
+    gap: 1rem;
+}
+.movement-money{
+    grid-column: 1/3;
+    grid-row: 1/4;
+    background: linear-gradient(to top, pink, rgb(240, 112, 133));
+    padding: 1rem;
+    border-radius: 5px;
+}
+.money {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+    font-size: 1.3rem;
+}
+.transfer-money {
+    background: linear-gradient(to top, pink, rgb(240, 112, 133));
+    /* background: linear-gradient(to top, lightgreen, white); */
+    padding: 1rem;
+    border-radius: 5px;
+}
+.loan-money {
+    background: linear-gradient(to top, pink, rgb(240, 112, 133));
+    /* background: linear-gradient(to top, lightblue, white); */
+    padding: 1rem;
+    border-radius: 5px;
+}
+.close-account {
+    background: linear-gradient(to top, pink, rgb(240, 112, 133));
+    /* background: linear-gradient(to top, red, white); */
+    padding: 1rem;
+    border-radius: 5px;
+}
+.transfer, .loan, .close {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+.transfer-btn, .loan-btn, .close-btn {
+    width: 20%;
+    cursor: pointer;
+    background: white;
+}
+.transactions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1.4rem 4rem ;
+    font-weight: bold;
+    font-size: 2rem;
+}
+.sortBtn {
+    background: linear-gradient(to top, pink, rgb(240, 112, 133));
+    border: none;
+    padding: 0 0.5rem;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+.deposit-summary, .interest-summary {
+    color: green;
+}
+.withdrawal-summary {
+    color: red;
+}
+@media(max-width: 641px) {
+    .grid-container {
+        grid-template-columns: repeat(1, 1fr);
+        margin: 1rem;
+    }
+    .movement-money {
+        grid-column: 1/2;
+    }
+    .balanceTitle h2 {
+        font-size: 1.4rem;
+    }
+    .transactions {
+        margin: 1.4rem;
+        font-size: 1rem;
+    }
+    .user {
+        margin: 1rem;
+    }
+    .userInfo input {
+        width: 50%;
+    }
+}
+/* Main ends*/
